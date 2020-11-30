@@ -1,0 +1,46 @@
+#testing
+#properties.externo = /web/wl/webconsultadocumentos/properties/
+
+#dev
+#properties.externo = D:/properties/mapfre/
+
+#Context
+server.servlet.context-path= /security
+#Puerto Servicio
+server.port=8081
+
+#Security
+security.oauth2.resource.filter-order=3
+
+#https://github.com/nydiarra/springboot-jwt
+security.signing-key=MaYzkSjmkzPC57L
+security.encoding-strength=256
+security.security-realm=Spring Boot JWT
+
+security.jwt.client-id=TDPAPP
+security.jwt.client-secret=tdpapp$
+security.jwt.grant-type=password
+security.jwt.scope-read=read
+security.jwt.scope-write=write
+security.jwt.resource-ids=tdpresourceid
+security.jwt.token-time=3600
+
+#DB
+spring.datasource.url = jdbc:mysql://bdmysql05.mysql.database.azure.com:3306/bddessegdata?serverTimezone=UTC&useLegacyDatetimeCode=false
+spring.datasource.username = usrdessegdata@bdmysql05
+spring.datasource.password = j3nd92HawQ
+
+spring.jpa.show-sql=false
+
+
+#HABILITAR CONSOLA
+# Enabling H2 Console
+#spring.h2.console.enabled=true
+# Custom H2 Console URL
+#spring.h2.console.path=/h2
+
+#spring.datasource.url=jdbc:h2:mem:testdb
+#spring.datasource.driverClassName=org.h2.Driver
+#spring.datasource.username=sa
+#spring.datasource.password=
+#spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
